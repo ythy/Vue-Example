@@ -1,0 +1,61 @@
+{
+  "name": "lampboxs",
+  "version": "0.0.1",
+  "description": "灯箱APP管理",
+  "author": "UX",
+  "repository": {
+    "type": "svn",
+    "url": "http://109.14.6.42:9090/svn/b2bClient/LightBox/"
+  },
+  "scripts": {
+    "start:dev": "webpack-dev-server",
+    "build": "webpack --config webpack/webpack.config.prod.js --progress -p",
+    "open": "Internet.lnk http://127.0.0.1:7128/dist/index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.8.0",
+    "superagent": "^2.3.0",
+    "superagent-jsonp": "^0.1.1",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^2.0.29",
+    "@types/vue": "^2.0.0",
+    "autoprefixer": "^6.3.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-strict-mode": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.23.1",
+    "cssnano": "^4.0.0-rc.2",
+    "expose-loader": "^0.7.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^3.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.8.1",
+    "url-loader": "^0.5.7",
+    "vue": "^2.5.2",
+    "vue-loader": "^14.2.2",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.2",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.0",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
