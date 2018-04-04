@@ -3,7 +3,7 @@ const env = require('../environment/dev.env');
 const _ = require('lodash');
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 webpackConfig.devServer = {
@@ -42,9 +42,9 @@ webpackConfig.module.rules = [...webpackConfig.module.rules,
 
 webpackConfig.plugins = [...webpackConfig.plugins,
   new webpack.DefinePlugin(env),
-  new ExtractTextPlugin({
+  new MiniCssExtractPlugin({
          filename: PUBLISH + "styles/[name].css",
-         ignoreOrder: true,
+         chunkFilename: PUBLISH + "styles/[name].bundle.css",
       }),
 ];
 

@@ -14,5 +14,11 @@
     </div> 
   </div>
 </template>
-
+<style scoped>
+  
+  div{
+    font-size: 20px;
+  }
+  
+</style>
 <script lang="ts" src="./Login.ts" ></script>

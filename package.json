@@ -1,11 +1,11 @@
 {
-  "name": "lampboxs",
+  "name": "vue-test",
   "version": "0.0.1",
-  "description": "灯箱APP管理",
-  "author": "UX",
+  "description": "vue-test",
+  "author": "mx",
   "repository": {
-    "type": "svn",
-    "url": "http://109.14.6.42:9090/svn/b2bClient/LightBox/"
+    "type": "",
+    "url": ""
   },
   "scripts": {
     "start:dev": "webpack-dev-server",
@@ -32,7 +32,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "compression-webpack-plugin": "^1.0.1",
-    "css-loader": "^0.23.1",
+    "css-loader": "^0.28.11",
     "cssnano": "^4.0.0-rc.2",
     "expose-loader": "^0.7.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -41,6 +41,7 @@
     "html-webpack-plugin": "^3.1.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
+    "mini-css-extract-plugin": "^0.4.0",
     "path": "^0.12.7",
     "postcss-loader": "^2.0.6",
     "style-loader": "^0.13.0",

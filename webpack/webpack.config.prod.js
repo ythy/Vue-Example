@@ -3,10 +3,7 @@ const env = require('../environment/prod.env');
 const _ = require('lodash');
 const webpack = require('webpack');
 const path = require('path');
-const CleanPathPlugin = require('./CleanPathPlugin');
-const AssetsPathPlugin = require('./AssetsPathPlugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const PACKAGE = require('../package.json');
 
 webpackConfig.mode = 'production';
@@ -38,11 +35,9 @@ webpackConfig.module.rules = [...webpackConfig.module.rules,
 
 webpackConfig.plugins = [...webpackConfig.plugins,
   new webpack.DefinePlugin(env),
-  new CleanPathPlugin(['dist']),
-  new AssetsPathPlugin(),
-  new ExtractTextPlugin({
+  new MiniCssExtractPlugin({
          filename: PUBLISH + "styles/" + PACKAGE.version + "-[hash]/" + "[name].css",
-         ignoreOrder: true,
+         chunkFilename: PUBLISH + "styles/" + PACKAGE.version + "-[hash]/" + "[name].bundle.css",
       }),
 ];
 

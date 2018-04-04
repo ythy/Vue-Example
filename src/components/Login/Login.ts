@@ -10,7 +10,6 @@ Vue.component('USelect', USelect);
 @Component
 export default class Login extends Vue {
   
-  // initial data
   username:string = 'mao';
   password:string = '';
   typeIndex:number = 1;
@@ -20,13 +19,15 @@ export default class Login extends Vue {
     { id: 3, name: '管理员' },
   ]
 
-
-  // method
   onLogin() {
-    console.log('uname', this.username);
-    if (this.username === '1' && this.typeIndex === 2)
+    if (this.username === 'mao' && this.typeIndex === 1 && this.password === 'mao')
       this.$router.push('/counter');
+    else{
+      
+    }
   }
+
+
 
 }
 
